@@ -14,10 +14,16 @@ export enum SessionType {
 export interface Advisor {
   id: string;
   name: string;
+  // Added: Localized name property for Arabic support
+  nameAr?: string;
   specialty: string;
+  // Added: Localized specialty property for Arabic support
+  specialtyAr?: string;
   rating: number;
   imageUrl: string;
   bio: string;
+  // Added: Localized bio property for Arabic support
+  bioAr?: string;
   volunteerHours: number;
 }
 
